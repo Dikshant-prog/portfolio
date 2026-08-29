@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Element, Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../assets/images/profile.png";
-import resume from "../assets/resume/Dikshant_Resume_v8";
+import resume from "../assets/resume/resume.pdf";
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
@@ -49,7 +49,7 @@ const Hero = () => {
               <div className="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center justify-content-lg-start">
                 <a
                   href={resume}
-                  download
+                  download="Dikshant_Resume.pdf"
                   className="btn btn-info btn-lg fw-semibold"
                 >
                   <i className="bi bi-download me-2"></i>

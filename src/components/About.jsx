@@ -1,7 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import profile from "../assets/images/profile.png";
-import resume from "../assets/resume/Dikshant_Resume_v8.pdf";
+import resume from '../assets/resume/resume.pdf'
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
@@ -123,7 +123,7 @@ const About = () => {
               <div className="mt-4">
                 <a
                   href={resume}
-                  download
+                  download="Dikshant_Resume.pdf"
                   className="btn btn-info btn-lg fw-semibold"
                 >
                   <i className="bi bi-download me-2"></i>

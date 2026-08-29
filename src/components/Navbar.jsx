@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import resume from "../assets/resume/Dikshant_Resume_v8";
+import resume from "../assets/resume/resume.pdf";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -137,7 +137,7 @@ const Navbar = () => {
               <a
                 href={resume}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="btn btn-info fw-semibold"
               >
                 Resume
