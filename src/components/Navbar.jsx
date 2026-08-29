@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import resume from "../assets/resume/Dikshant_ATS.pdf";
+import resume from "../assets/resume/Dikshant_Resume_v8";
 import { Link } from "react-scroll";
 
 const Navbar = () => {

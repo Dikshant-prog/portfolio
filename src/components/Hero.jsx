@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Element, Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../assets/images/profile.png";
-import resume from "../assets/resume/Dikshant_ATS.pdf";
+import resume from "../assets/resume/Dikshant_Resume_v8";
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);

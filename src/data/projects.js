@@ -12,7 +12,7 @@ const projects = [
       "A complete Student ERP system with student management, authentication and admin panel.",
     technologies: ["React", "Bootstrap", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/yourusername/student-erp",
-    live: "#",
+    live: "https://frontend-spw4.onrender.com/",
   },
 
   {
@@ -23,7 +23,7 @@ const projects = [
       "A letter generatior Website, where user enter details and generate Internship Letter, Offer Letter, Joining Letter, Certificate Letter.",
     technologies: ["HTML", "CSS", "Javascript"],
     github: "https://github.com/yourusername/lettergenerator",
-    live: "#",
+    live: "https://lettergeneratorweb.netlify.app/",
   },
 
   {
@@ -34,7 +34,7 @@ const projects = [
       "Weather application using OpenWeather API with live city search.",
     technologies: ["React", "Bootstrap", "API"],
     github: "https://github.com/yourusername/weather-app",
-    live: "#",
+    live: "https://weatherapp-zeta-lilac.vercel.app/",
   },
 
   {
@@ -44,7 +44,7 @@ const projects = [
     description: "Responsive React Portfolio developed using Bootstrap.",
     technologies: ["React", "Bootstrap"],
     github: "https://github.com/yourusername/portfolio",
-    live: "#",
+    live: "https://portfolio-jm1k.onrender.com/",
   },
 ];
 

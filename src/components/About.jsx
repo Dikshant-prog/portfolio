@@ -1,7 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import profile from "../assets/images/profile.png";
-import resume from "../assets/resume/Dikshant_ATS.pdf";
+import resume from "../assets/resume/Dikshant_Resume_v8.pdf";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
