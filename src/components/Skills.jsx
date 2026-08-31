@@ -31,11 +31,11 @@ const Skills = () => {
 
           {/* Skills */}
 
-          <div className="row g-4">
+          <div className="row g-3 g-md-4">
             {skills.map((item) => (
               <motion.div
                 key={item.id}
-                className="col-12 col-sm-6 col-lg-4 col-xl-3"
+                className="col-12 col-sm-6 col-md-4 col-lg-3"
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

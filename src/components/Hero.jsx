@@ -12,15 +12,15 @@ const Hero = () => {
   return (
     <Element name="home">
       <section
-        className={`min-vh-100 d-flex align-items-center ${theme === "dark" ? "bg-dark text-white" : "bg-light text-dark"}`}
+        className={`min-vh-100 d-flex align-items-center py-5 py-lg-0 ${theme === "dark" ? "bg-dark text-white" : "bg-light text-dark"}`}
       >
         <div className="container">
-          <div className="row align-items-center gy-5">
+          <div className="row align-items-center gy-4 gy-lg-5">
             {/* Left Side */}
             <div className="col-lg-6 text-center text-lg-start">
               <p className="text-info fs-5 fw-semibold mb-2">👋 Hello, I'm</p>
 
-              <h1 className="display-3 fw-bold">Dikshant</h1>
+              <h1 className="display-4 display-md-3 fw-bold">Dikshant</h1>
 
               <TypeAnimation
                 sequence={[
@@ -33,13 +33,13 @@ const Hero = () => {
                 ]}
                 speed={50}
                 repeat={Infinity}
-                className="fs-1 fw-bold text-info d-block mt-2"
+                className="fs-2 fs-md-1 fw-bold text-info d-block mt-2"
               />
 
               <p
                 className={`lead ${
                   theme === "dark" ? "text-light" : "text-secondary"
-                }`}
+                } mt-3`}
               >
                 Passionate MERN Stack Developer with knowledge of React.js,
                 Node.js, Express.js and MongoDB. I love building responsive,
@@ -86,8 +86,10 @@ const Hero = () => {
                 alt="Profile"
                 className="img-fluid rounded-circle border border-5 border-info shadow"
                 style={{
-                  width: "350px",
-                  height: "350px",
+                  maxWidth: "350px",
+                  width: "100%",
+                  height: "auto",
+                  aspectRatio: "1 / 1",
                   objectFit: "cover",
                 }}
               />

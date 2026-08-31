@@ -88,9 +88,9 @@ const Contact = () => {
                     </h5>
 
                     <p
-                      className={
+                      className={`text-break ${
                         theme === "dark" ? "text-light" : "text-secondary"
-                      }
+                      }`}
                     >
                       dikshant8650@gmail.com
                     </p>
@@ -181,7 +181,7 @@ const Contact = () => {
                         type="text"
                         name="name"
                         className={`form-control ${
-                          theme === "theme"
+                          theme === "dark"
                             ? "bg-dark text-white border-secondary"
                             : ""
                         }`}

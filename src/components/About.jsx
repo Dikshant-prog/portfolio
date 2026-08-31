@@ -27,7 +27,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="row align-items-center g-5" data-aos="fade-up">
+          <div className="row align-items-center g-4 g-lg-5" data-aos="fade-up">
             {/* Left Side */}
 
             <div className="col-lg-5 text-center">
@@ -35,12 +35,13 @@ const About = () => {
                 src={profile}
                 alt="About"
                 className="img-fluid rounded shadow-lg"
+                style={{ maxWidth: "380px", width: "100%", height: "auto" }}
               />
             </div>
 
             {/* Right Side */}
 
-            <div className="col-lg-7">
+            <div className="col-lg-7 text-center text-lg-start">
               <h3 className="fw-bold mb-3">Hi, I'm Dikshant</h3>
 
               <h5 className="text-info mb-4">MERN Stack Developer</h5>
@@ -66,7 +67,7 @@ const About = () => {
 
               {/* Personal Information */}
 
-              <div className="row mt-4 gy-3">
+              <div className="row mt-4 gy-3 text-start">
                 <div className="col-md-6">
                   <div
                     className={`card h-100 ${theme === "dark" ? "bg-dark text-white border-secondary" : "bg-white text-dark"}`}
@@ -95,7 +96,7 @@ const About = () => {
                     className={`card h-100 ${theme === "dark" ? "bg-dark text-white border-secondary" : "bg-white text-dark"}`}
                   >
                     <div className="card-body">
-                      <p>
+                      <p className="text-break">
                         <i className="bi bi-envelope-fill text-info me-2"></i>
                         <strong>Email:</strong>
                         <br />
@@ -120,7 +121,7 @@ const About = () => {
 
               {/* Resume Button */}
 
-              <div className="mt-4">
+              <div className="mt-4 d-flex justify-content-center justify-content-lg-start">
                 <a
                   href={resume}
                   download="Dikshant_Resume.pdf"

@@ -26,7 +26,7 @@ const Education = () => {
 
           <div className="row g-4">
             {/* MCA */}
-            <div className="col-md-6" data-aos="fade-right">
+            <div className="col-12 col-md-6" data-aos="fade-right">
               <div
                 className={`card h-100 shadow border-0 ${
                   theme === "dark"
@@ -35,13 +35,13 @@ const Education = () => {
                 }`}
               >
                 <div className="card-body">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h4 className="fw-bold">
+                  <div className="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
+                    <h4 className="fw-bold mb-0">
                       <i className="bi bi-mortarboard-fill text-info me-2"></i>
                       Master of Computer Applications
                     </h4>
 
-                    <span className="badge bg-info text-dark">2023 - 2025</span>
+                    <span className="badge bg-info text-dark align-self-start align-self-sm-center">2023 - 2025</span>
                   </div>
 
                   <hr className={theme === "dark" ? "border-secondary" : ""} />
@@ -67,7 +67,7 @@ const Education = () => {
             </div>
 
             {/* Graduation */}
-            <div className="col-md-6" data-aos="fade-right">
+            <div className="col-12 col-md-6" data-aos="fade-right">
               <div
                 className={`card h-100 shadow border-0 ${
                   theme === "dark"
@@ -76,13 +76,13 @@ const Education = () => {
                 }`}
               >
                 <div className="card-body">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h4 className="fw-bold">
+                  <div className="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
+                    <h4 className="fw-bold mb-0">
                       <i className="bi bi-book-fill text-info me-2"></i>
                       Bachelor Degree
                     </h4>
 
-                    <span className="badge bg-info text-dark">2020 - 2023</span>
+                    <span className="badge bg-info text-dark align-self-start align-self-sm-center">2020 - 2023</span>
                   </div>
 
                   <hr className={theme === "dark" ? "border-secondary" : ""} />
@@ -105,7 +105,7 @@ const Education = () => {
             </div>
 
             {/* 12th */}
-            <div className="col-md-6" data-aos="fade-right">
+            <div className="col-12 col-md-6" data-aos="fade-right">
               <div
                 className={`card h-100 shadow border-0 ${
                   theme === "dark"
@@ -114,13 +114,13 @@ const Education = () => {
                 }`}
               >
                 <div className="card-body">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h4 className="fw-bold">
+                  <div className="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
+                    <h4 className="fw-bold mb-0">
                       <i className="bi bi-journal-bookmark-fill text-info me-2"></i>
                       Higher Secondary (12th)
                     </h4>
 
-                    <span className="badge bg-info text-dark">2020</span>
+                    <span className="badge bg-info text-dark align-self-start align-self-sm-center">2020</span>
                   </div>
 
                   <hr className={theme === "dark" ? "border-secondary" : ""} />
@@ -139,7 +139,7 @@ const Education = () => {
             </div>
 
             {/* 10th */}
-            <div className="col-md-6" data-aos="fade-right">
+            <div className="col-12 col-md-6" data-aos="fade-right">
               <div
                 className={`card h-100 shadow border-0 ${
                   theme === "dark"
@@ -148,13 +148,13 @@ const Education = () => {
                 }`}
               >
                 <div className="card-body">
-                  <div className="d-flex justify-content-between align-items-center">
-                    <h4 className="fw-bold">
+                  <div className="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
+                    <h4 className="fw-bold mb-0">
                       <i className="bi bi-pencil-square text-info me-2"></i>
                       Secondary (10th)
                     </h4>
 
-                    <span className="badge bg-info text-dark">2018</span>
+                    <span className="badge bg-info text-dark align-self-start align-self-sm-center">2018</span>
                   </div>
 
                   <hr className={theme === "dark" ? "border-secondary" : ""} />

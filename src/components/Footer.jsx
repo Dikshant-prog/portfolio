@@ -13,10 +13,10 @@ const Footer = () => {
       }`}
     >
       <div className="container">
-        <div className="row g-3">
+        <div className="row g-4 gy-lg-3">
           {/* About */}
 
-          <div className="col-lg-4">
+          <div className="col-12 col-md-4 col-lg-4">
             <h3 className="fw-bold text-info mb-2">Dikshant</h3>
 
             <p
@@ -32,7 +32,7 @@ const Footer = () => {
 
           {/* Quick Links */}
 
-          <div className="col-lg-4">
+          <div className="col-12 col-md-4 col-lg-4">
             <h4 className="fw-bold mb-2">Quick Links</h4>
 
             <div className="d-flex flex-column gap-2">
@@ -100,7 +100,7 @@ const Footer = () => {
 
           {/* Social Links */}
 
-          <div className="col-lg-4">
+          <div className="col-12 col-md-4 col-lg-4">
             <h4 className="fw-bold mb-3">Connect With Me</h4>
 
             <div className="d-flex gap-3">

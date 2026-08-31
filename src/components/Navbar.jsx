@@ -5,6 +5,14 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
+
+  const closeMenu = () => {
+    const navbarCollapse = document.getElementById("navbarNav");
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    }
+  };
+
   return (
     <nav
       className={`navbar navbar-expand-lg sticky-top shadow ${theme === "dark" ? "navbar-dark bg-dark" : "navbar-light bg-light"}`}
@@ -19,6 +27,7 @@ const Navbar = () => {
           duration={500}
           className="navbar-brand fw-bold fs-3 text-info"
           style={{ cursor: "pointer" }}
+          onClick={closeMenu}
         >
           Dikshant
         </Link>
@@ -37,8 +46,8 @@ const Navbar = () => {
         </button>
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto align-items-lg-center">
+        <div className="collapse navbar-collapse py-3 py-lg-0" id="navbarNav">
+          <ul className="navbar-nav ms-auto align-items-center align-items-lg-center text-center text-lg-start gap-2 gap-lg-0">
             <li className="nav-item">
               <Link
                 to="home"
@@ -46,8 +55,9 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link"
+                className="nav-link px-3"
                 style={{ cursor: "pointer" }}
+                onClick={closeMenu}
               >
                 Home
               </Link>
@@ -60,8 +70,9 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link"
+                className="nav-link px-3"
                 style={{ cursor: "pointer" }}
+                onClick={closeMenu}
               >
                 About
               </Link>
@@ -74,8 +85,9 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link"
+                className="nav-link px-3"
                 style={{ cursor: "pointer" }}
+                onClick={closeMenu}
               >
                 Skills
               </Link>
@@ -88,8 +100,9 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link"
+                className="nav-link px-3"
                 style={{ cursor: "pointer" }}
+                onClick={closeMenu}
               >
                 Projects
               </Link>
@@ -102,8 +115,9 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link"
+                className="nav-link px-3"
                 style={{ cursor: "pointer" }}
+                onClick={closeMenu}
               >
                 Education
               </Link>
@@ -116,15 +130,20 @@ const Navbar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="nav-link"
+                className="nav-link px-3"
                 style={{ cursor: "pointer" }}
+                onClick={closeMenu}
               >
                 Contact
               </Link>
             </li>
 
-            <li className="nav-item ms-lg-3">
-              <button className="btn btn-outline-info" onClick={toggleTheme}>
+            <li className="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <button
+                className="btn btn-outline-info w-100 w-lg-auto"
+                onClick={toggleTheme}
+                aria-label="Toggle theme"
+              >
                 {theme === "light" ? (
                   <i className="bi bi-moon-fill"></i>
                 ) : (
@@ -133,12 +152,13 @@ const Navbar = () => {
               </button>
             </li>
 
-            <li className="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <li className="nav-item ms-lg-3 mt-2 mt-lg-0">
               <a
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-info fw-semibold"
+                className="btn btn-info fw-semibold w-100 w-lg-auto"
+                onClick={closeMenu}
               >
                 Resume
               </a>

@@ -30,7 +30,7 @@ const Projects = () => {
           <div className="row g-4">
             {projects.map((project) => (
               <div
-                className="col-md-6 col-xl-6"
+                className="col-12 col-md-6"
                 key={project.id}
                 data-aos="fade-up"
               >
@@ -52,22 +52,22 @@ const Projects = () => {
                     }}
                   />
 
-                  <div className="card-body">
+                  <div className="card-body d-flex flex-column">
                     <h3 className="card-title fw-bold">{project.title}</h3>
 
                     <p
                       className={`card-text ${
                         theme === "dark" ? "text-light" : "text-secondary"
-                      }`}
+                      } flex-grow-1`}
                     >
                       {project.description}
                     </p>
 
-                    <div className="mb-3">
+                    <div className="d-flex flex-wrap gap-1 mt-3 mb-2">
                       {project.technologies.map((tech, index) => (
                         <span
                           key={index}
-                          className="badge text-bg-info me-2 mb-2"
+                          className="badge text-bg-info"
                         >
                           {tech}
                         </span>
@@ -80,12 +80,12 @@ const Projects = () => {
                       theme === "dark" ? "bg-dark" : "bg-white"
                     }`}
                   >
-                    <div className="d-flex gap-3">
+                    <div className="d-flex flex-column flex-sm-row gap-2 gap-sm-3">
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noreferrer"
-                        className={`btn w-50 ${
+                        className={`btn flex-fill ${
                           theme === "dark" ? "btn-outline-light" : "btn-dark"
                         }`}
                       >
@@ -97,7 +97,7 @@ const Projects = () => {
                         href={project.live}
                         target="_blank"
                         rel="noreferrer"
-                        className="btn btn-info w-50"
+                        className="btn btn-info flex-fill"
                       >
                         <i className="bi bi-box-arrow-up-right me-2"></i>
                         Live Demo
