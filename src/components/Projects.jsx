@@ -80,29 +80,15 @@ const Projects = () => {
                       theme === "dark" ? "bg-dark" : "bg-white"
                     }`}
                   >
-                    <div className="d-flex flex-column flex-sm-row gap-2 gap-sm-3">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className={`btn flex-fill ${
-                          theme === "dark" ? "btn-outline-light" : "btn-dark"
-                        }`}
-                      >
-                        <i className="bi bi-github me-2"></i>
-                        GitHub
-                      </a>
-
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="btn btn-info flex-fill"
-                      >
-                        <i className="bi bi-box-arrow-up-right me-2"></i>
-                        Live Demo
-                      </a>
-                    </div>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn btn-info w-100"
+                    >
+                      <i className="bi bi-box-arrow-up-right me-2"></i>
+                      Live Demo
+                    </a>
                   </div>
                 </div>
               </div>
