@@ -1,7 +1,7 @@
 import erp from "../assets/images/erp.png";
 import weather from "../assets/images/weather.png";
-import lettergenerator from "../assets/images/lettergenerator.png";
 import portfolio from "../assets/images/portfolio.png";
+import lms from "../assets/images/lms.jpeg"
 
 const projects = [
   {
@@ -17,13 +17,13 @@ const projects = [
 
   {
     id: 2,
-    image: lettergenerator,
-    title: "Letter Generator",
+    image: lms,
+    title: "Learning Website (Skill Up)",
     description:
-      "A letter generatior Website, where user enter details and generate Internship Letter, Offer Letter, Joining Letter, Certificate Letter.",
+      "SkillUp is an online learning website where users can explore courses and learn skills like HTML, CSS, JavaScript, React, jQuery, and Bootstrap.",
     technologies: ["HTML", "CSS", "Javascript"],
     github: "#",
-    live: "https://lettergeneratorweb.netlify.app/",
+    live: "https://lms-aa60.onrender.com/",
   },
 
   {
